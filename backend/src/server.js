@@ -21,8 +21,7 @@ if (process.env.NODE_ENV !== 'production') {
 app.use(cors());
 }
 
-app.use(express.json()); // to parse JSON bodies
-app.use(rateLimiter);
+app.use(express.json());
 
 
 app.use('/api/notes', notesRoutes);
